@@ -280,6 +280,9 @@ nav .portfolio:focus {
 img {
   display: block;
 }
+.list-images2 figcaption{
+  margin-bottom: 30px;
+}
 .social-media{
   display: flex;
   justify-content: space-between;
@@ -289,15 +292,18 @@ img {
   padding-top: 20px;
 }
 .soc-media{
+  display: flex;
   width: 20px;
   height: 20px;
+  align-items: center;
+  justify-content: center;
 }
 .social-link{
   display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: var(--white);
   align-items: center;
   justify-content: center;
   fill: var(--blue);
