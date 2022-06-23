@@ -204,10 +204,29 @@ nav .portfolio:focus {
 .section .but:hover {
   border-radius: 4px;
 }
+.clients{
+  font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 0px;
+    margin-bottom: 50px;
+}
+.list-clients{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-top: 20px;
+}
 .icon,
 .corpos{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   height: 120px;
   padding: 25px 0;
   border-radius: 4px;
@@ -456,7 +475,6 @@ footer {
 }
 footer .container{
   padding-top: 60px;
-  padding-bottom: 60px;
 }
 footer .end {
   text-decoration-line: none;
@@ -475,16 +493,42 @@ footer address {
 footer .stat{
   color: var(--white);
 }
-.join .media{
+.join{
+  list-style: none;
   display: flex;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  padding: 25px 0;
+  align-items: center;
+  margin-top: 16px;
+  padding: 25px;
   background-color: var(--black);
   fill: var(--blue);
 }
+.join li{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  padding: 0px;
+  background-color: var(--black);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 10px;
+  fill: var(--blue);
+}
+.media{
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  fill: var(--white);
+}
+.foot-social{
+  margin-left: 180px;
+  padding-top: 5px;
+}
 footer .come-in{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
   width: 113px;
   height: 16px;
   text-transform: uppercase;
