@@ -221,6 +221,7 @@ nav .portfolio:focus {
   margin-right: 20px;
   margin-left: 20px;
   padding-top: 20px;
+  border-radius: 50%;
 }
 .icon,
 .corpos{
@@ -309,6 +310,10 @@ img {
   margin-right: 32px;
   margin-left: 32px;
   padding-top: 20px;
+}
+.social-media li{
+  flex-wrap: wrap;
+  gap: 10px;
 }
 .soc-media{
   display: flex;
