@@ -66,6 +66,15 @@ body {
 }
 .inner-link {
   text-decoration: none;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  color: var(--text-black);
+  line-height: 1.19;
+  text-decoration-line: none;
+  padding: 24px 93px 24px 0px;
 }
 .index nav a {
   color: #212121;
@@ -99,6 +108,7 @@ header .mail{
 }
 
 .list-nav1{
+  list-style-type: none;
   margin-left: auto;
   margin-right: 12px;
   display: flex;
@@ -135,35 +145,28 @@ header .agency:hover,
 header .agency:focus,
 header .contact:hover,
 header .contact.focus {
-  color: #2196f3;
+  color: var(--blue);
 }
 
 header .tel:hover,
 header .mail:hover {
-  color: #2196f3;
+  color: var(--blue);
 }
 header .icon{
   display: flex;
   padding: 20px 0;
-  fill: #afb1b8;
+  fill: var(--grey);
   border-radius: 50%;
 }
-header .icons1{
-  width: 16px;
-  height: 12px;
-  fill: #afb1b8;
-  border-radius: 50%;
-}
-header .icons2{
-  width: 10px;
-  height: 16px;
-  fill: #afb1b8;
+header .icons{
+  fill: var(--grey);
   border-radius: 50%;
 }
 
+
 nav .portfolio:hover,
 nav .portfolio:focus {
-  color: #2196f3;
+  color: var(--blue);
 }
 .sec1{
   background-color: rgba(47, 48, 58, 1);
@@ -200,6 +203,9 @@ nav .portfolio:focus {
   background-color: var(--white);
   display: flex;
   padding: 40px;
+  letter-spacing: 0.03em;
+  align-items: center;
+  justify-content: space-between;
 }
 .section .but:hover {
   border-radius: 4px;
@@ -233,7 +239,7 @@ nav .portfolio:focus {
   border-radius: 4px;
   margin-bottom: 30px;
   background-color: #ffffff;
-  fill: var(--blue);
+  fill: var(--grey);
   border-radius: 50%;
 }
 .corpos .icons{
@@ -312,13 +318,12 @@ img {
   padding-top: 20px;
 }
 .social-media li{
+  display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: 10px;
 }
 .soc-media{
-  display: flex;
-  width: 20px;
-  height: 20px;
   align-items: center;
   justify-content: center;
 }
@@ -330,12 +335,12 @@ img {
   background-color: var(--white);
   align-items: center;
   justify-content: center;
-  fill: var(--blue);
+  fill: var(--grey);
 }
 .social-link:hover,
 .social-link:focus{
   background-color: var(--blue);
-  fill: #ececec;
+  fill: var(--white);
 }
 .sec4{
   background-color: var(--grey);
@@ -483,7 +488,6 @@ footer .container{
 }
 footer .end {
   text-decoration-line: none;
-  color: var(--blue);
 }
 footer address {
   color: var(--white);
@@ -505,7 +509,7 @@ footer .stat{
   margin-top: 16px;
   padding: 25px;
   background-color: var(--black);
-  fill: var(--blue);
+  fill: var(--white);
 }
 .join li{
   justify-content: center;
@@ -518,7 +522,7 @@ footer .stat{
   border-radius: 50%;
   cursor: pointer;
   margin-right: 10px;
-  fill: var(--blue);
+  fill: var(--white);
 }
 .media{
   width: 20px;
