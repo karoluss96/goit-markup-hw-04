@@ -18,6 +18,7 @@
 }
 
 body {
+  background-color:var(--white);
   display: block;
 }
 
@@ -76,6 +77,7 @@ body {
   text-decoration-line: none;
   padding: 24px 93px 24px 0px;
 }
+
 .index nav a {
   color: #212121;
   font-weight: 500;
@@ -104,7 +106,11 @@ ol {
 }
 header .tel,
 header .mail{
-  color: #757575;
+  color: var(--text-grey);
+}
+.index .tel{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .list-nav1{
@@ -137,6 +143,11 @@ header .agency,
 header .portfolio,
 header .contact {
   color: #757575;
+  cursor: pointer;
+  text-decoration-line: none;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
 }
 
 header .portfolio:hover,
@@ -146,6 +157,12 @@ header .agency:focus,
 header .contact:hover,
 header .contact.focus {
   color: var(--blue);
+}
+header .tel,
+header .mail{
+  cursor: pointer;
+  text-decoration: none;
+  color: #757575;
 }
 
 header .tel:hover,
@@ -162,6 +179,9 @@ header .icons{
   fill: var(--grey);
   border-radius: 50%;
 }
+.list-menu:not(:last-child) {
+  margin-right: 46px;
+}
 
 
 nav .portfolio:hover,
@@ -173,6 +193,9 @@ nav .portfolio:focus {
   height: 600px;
   text-align: center;
   justify-content: center;
+  display: flex;
+  align-items: center;
+  background-size: 1600px 600px;
   background-image:   linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4),
@@ -183,20 +206,34 @@ nav .portfolio:focus {
 }
 .sec1 .but {
   color: var(--white);
-  background: #2196f3;
+  background: var(--blue);
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   border: none;
-  padding: 10px 41px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px 40px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   align-items: center;
 }
+.title{
+  color: white;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 44px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  max-width: 696px;
+}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.lorem-li{
+  margin-right: 30px;
 }
 .sec2,
 .lorem{
@@ -214,10 +251,12 @@ nav .portfolio:focus {
   font-weight: 700;
     font-size: 36px;
     line-height: 42px;
+    color: var(--text-blacks);
     text-align: center;
     letter-spacing: 0.03em;
     margin: 0px;
     margin-bottom: 50px;
+
 }
 .list-clients{
   display: flex;
@@ -227,20 +266,27 @@ nav .portfolio:focus {
   margin-right: 20px;
   margin-left: 20px;
   padding-top: 20px;
-  border-radius: 50%;
+ 
 }
-.icon,
-.corpos{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.icon{
+  width: 270px;
   height: 120px;
-  padding: 25px 0;
+  background-color: var(--grey);
   border-radius: 4px;
   margin-bottom: 30px;
-  background-color: #ffffff;
-  fill: var(--grey);
-  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.corpos{
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid #AFB1B8;
+  fill: #757575;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
 }
 .corpos .icons{
   width: 106px;
@@ -249,9 +295,6 @@ nav .portfolio:focus {
 .icons{
   width: 70px;
   height: 70px;
-}
-.icons:hover{
-  background-color: #2196f3;
 }
 .corpos:hover,
 .corpos:focus{
@@ -262,19 +305,29 @@ nav .portfolio:focus {
 .text2,
 .text3,
 .text4{
+  font-size: 14px;
   font-weight: 700;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   display: block;
+  text-align: left;
+  list-style: none;
+  padding-right: 30px;
 }
 .text11, 
 .text22, 
 .text33, 
 .text44{
-  color: #757575;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--text-grey);
+  letter-spacing: 0.03em;
+  text-align: justify;
 }
 .list-images{
   display: flex;
   padding-left: 0;
+  justify-content: space-around;
 }
 .sec2,
 .lorem,
@@ -294,6 +347,17 @@ nav .portfolio:focus {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.6;
+}
+.we{
+  height: 42px;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  color: var(--text-black);
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  max-width: 212px;
 }
 .about,
 .we{
@@ -317,7 +381,7 @@ img {
   margin-left: 32px;
   padding-top: 20px;
 }
-.social-media li{
+.soc-li{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -348,12 +412,14 @@ img {
   line-height: 1.5;
   letter-spacing: 0.03em;
   padding-top: 0;
+  justify-content: space-between;
 }
 .sec4 .we {
   padding-top: 94px;
   background-color: #f5f4fa;
 }
 .list-images2{
+  background-color: #f5f4fa;
   display: flex;
   padding-left: 0;
   padding-bottom: 10px;
@@ -369,10 +435,47 @@ img {
   background-color: #fff;
   text-align: center;
 }
+.imagination1{
+  margin-left: 0px;
+}
 .imagineA,
 .imagineB,
 .imagineC{
   border-radius: 0px;
+}
+.person{
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding: 30px 97px 10px;
+}
+.job{
+  color: var(--text-grey);
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 16px;
+}
+.icon5{
+
+}
+.icon-link{
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid #AFB1B8;
+  fill: var(--text-grey);
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+.icon-link:hover,
+.icon-link:focus{
+  border: var(--blue);
+  fill: var(--blue);
 }
 .list-buttons{
   display: flex;
@@ -489,7 +592,7 @@ footer .container{
 footer .end {
   text-decoration-line: none;
 }
-footer address {
+.address {
   color: var(--white);
   font-size: 16px;
   font-style: normal;
@@ -498,6 +601,7 @@ footer address {
   font-weight: 400;
   list-style-type: none;
   margin-bottom: 9px;
+  gap: 30px;
 }
 footer .stat{
   color: var(--white);
