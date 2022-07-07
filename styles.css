@@ -310,6 +310,9 @@ nav .portfolio:focus {
   width: 70px;
   height: 70px;
 }
+.ic:hover{
+  background-color: #2196f3;
+}
 .corpos:hover,
 .corpos:focus{
   fill:var(--blue);
