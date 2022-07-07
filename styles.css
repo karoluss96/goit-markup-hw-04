@@ -159,7 +159,8 @@ header .contact.focus {
   color: var(--blue);
 }
 header .tel,
-header .mail{
+header .mail,
+header .ic{
   cursor: pointer;
   text-decoration: none;
   color: #757575;
