@@ -166,16 +166,19 @@ header .mail{
 }
 
 header .tel:hover,
-header .mail:hover {
+header .mail:hover,
+header .ics:hover{
   color: var(--blue);
 }
-header .icon{
+header .ic{
   display: flex;
   padding: 20px 0;
   fill: var(--grey);
   border-radius: 50%;
 }
-header .icons{
+header .ics{
+  width: 16px;
+  height: 12px;
   fill: var(--grey);
   border-radius: 50%;
 }
@@ -268,10 +271,20 @@ nav .portfolio:focus {
   padding-top: 20px;
  
 }
-.icon{
+.ic{
+  width: 16px;
+  height: 20px;
+  background-color: var(--grey);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sec2 .ic{
   width: 270px;
   height: 120px;
-  background-color: var(--grey);
+  background-color: #F5F4FA;
   border-radius: 4px;
   margin-bottom: 30px;
   display: flex;
@@ -288,11 +301,11 @@ nav .portfolio:focus {
   display: flex;
   align-items: center;
 }
-.corpos .icons{
+.corpos .ics{
   width: 106px;
   height: 60px;
 }
-.icons{
+.ics{
   width: 70px;
   height: 70px;
 }
