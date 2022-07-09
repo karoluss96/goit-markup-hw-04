@@ -155,7 +155,7 @@ header .portfolio:focus,
 header .agency:hover,
 header .agency:focus,
 header .contact:hover,
-header .contact.focus {
+header .contact:focus {
   color: var(--blue);
 }
 header .tel,
@@ -165,11 +165,19 @@ header .ic{
   text-decoration: none;
   color: #757575;
 }
+header .tel{
+	padding-right: 12px;
+}
+header .mail{
+	padding-right:50px;
+}
 
 header .tel:hover,
 header .mail:hover,
-header .ics:hover{
+header .ic:hover{
   color: var(--blue);
+  fill: var(--blue);
+  cursor: pointer;
 }
 header .ic{
   display: flex;
@@ -183,6 +191,7 @@ header .ics{
   fill: var(--grey);
   border-radius: 50%;
 }
+
 .list-menu:not(:last-child) {
   margin-right: 46px;
 }
@@ -273,19 +282,9 @@ nav .portfolio:focus {
  
 }
 .ic{
-  width: 16px;
-  height: 20px;
-  background-color: var(--grey);
-  border-radius: 4px;
-  margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.sec2 .ic{
-  width: 270px;
+  padding: 25px 0;
   height: 120px;
-  background-color: #F5F4FA;
+  background-color: var(--grey);
   border-radius: 4px;
   margin-bottom: 30px;
   display: flex;
@@ -311,7 +310,10 @@ nav .portfolio:focus {
   height: 70px;
 }
 .ic:hover{
-  background-color: #2196f3;
+  cursor: pointer;
+}
+header .ics:hover{
+	fill: var(--blue);
 }
 .corpos:hover,
 .corpos:focus{
@@ -416,7 +418,7 @@ img {
   background-color: var(--white);
   align-items: center;
   justify-content: center;
-  fill: var(--grey);
+  fill: #AFB1B8;
 }
 .social-link:hover,
 .social-link:focus{
@@ -605,6 +607,13 @@ footer .container{
   padding-top: 60px;
 }
 footer .end {
+	font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  line-height: 1.19;
   text-decoration-line: none;
 }
 .address {
@@ -626,19 +635,19 @@ footer .stat{
   display: flex;
   align-items: center;
   margin-top: 16px;
-  padding: 25px;
+  flex-wrap: wrap;
+  gap: 10px;
   background-color: var(--black);
   fill: var(--white);
 }
-.join li{
-  justify-content: center;
+.join-li{
+  justify-content: space-between;
   align-items: center;
   display: flex;
-  width: 44px;
-  height: 44px;
   padding: 0px;
+  flex-wrap: wrap;
+  gap: 10px;
   background-color: var(--black);
-  border-radius: 50%;
   cursor: pointer;
   margin-right: 10px;
   fill: var(--white);
@@ -650,19 +659,26 @@ footer .stat{
   fill: var(--white);
 }
 .foot-social{
-  margin-left: 180px;
-  padding-top: 5px;
+  margin-left: 70px;
+  flex-wrap: wrap;
 }
-footer .come-in{
+.come-in{
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.16;
   width: 113px;
   height: 16px;
   text-transform: uppercase;
-  font-size: 14px;
   font-family: 'Roboto';
   letter-spacing: 0.03em;
+  padding-bottom: 20px;
+  color: var(--white);
+}
+.foot-link{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--white);
 }
 footer .media:hover,
 footer .media:focus{
@@ -672,6 +688,7 @@ footer .tel {
   text-decoration-line: none;
   color: rgba(255, 255, 255, 0.6);
   opacity: 40%;
+  padding-bottom: 8px;
 }
 footer .tel:hover,
 footer .tel:focus {
@@ -682,6 +699,7 @@ footer .mail {
   text-decoration-line: none;
   color: rgba(255, 255, 255, 0.6);
   opacity: 40%;
+  padding-bottom: 8px;
 }
 footer .mail:hover,
 footer .mail:focus {
