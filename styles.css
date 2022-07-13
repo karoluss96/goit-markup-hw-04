@@ -107,11 +107,9 @@ ol {
 header .tel,
 header .mail{
   color: var(--text-grey);
+  margin-left: 10px;
 }
-.index .tel{
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 .list-nav1{
   list-style-type: none;
@@ -125,6 +123,9 @@ header .mail{
   color: var(--text-grey);
   margin-left: 50px;
   display: flex;
+}
+.list-nav1:hover{
+  color: var(--blue);
 }
 
 .main-container{
@@ -166,9 +167,11 @@ header .ic{
   color: var(--text-grey);
 }
 header .tel{
+  margin-left: 15px;
 	padding-right: 12px;
 }
 header .mail{
+  margin-left: 15px;
 	padding-right:50px;
 }
 
@@ -186,6 +189,7 @@ header .ic{
 
 }
 header .ics{
+  margin-right: 20px;
   width: 16px;
   height: 12px;
   fill: var(--text-grey);
@@ -291,6 +295,7 @@ nav .portfolio:focus {
   margin-bottom: 30px;
   display: flex;
   align-items: center;
+  
   justify-content: center;
 }
 .corpos{
@@ -314,7 +319,7 @@ nav .portfolio:focus {
 .corpos:hover,
 .corpos:focus{
   fill:var(--blue);
-  border: 1px solid var(--text-grey);
+  border: 1px solid var(--blue);
 }
 .text1,
 .text2,
@@ -649,10 +654,14 @@ footer .stat{
   gap: 10px;
   flex-wrap: wrap;
   display: flex;
-  background-color: var(--black);
+  border-radius: 50%;
+  background-color: var(--text-grey);
   cursor: pointer;
   margin-right: 10px;
   fill: var(--white);
+}
+.join-li:hover{
+  background-color: var(--blue);
 }
 .media{
   width: 20px;
