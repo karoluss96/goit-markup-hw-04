@@ -657,8 +657,7 @@ footer .stat{
   align-items: center;
   margin-top: 16px;
   gap: 10px;
-  margin-left: 10px;
-  margin-right:10px;
+  
   flex-wrap: wrap;
   display: flex;
   background-color: var(--black);
@@ -671,6 +670,8 @@ footer .stat{
   gap: 10px;
   flex-wrap: wrap;
   display: flex;
+  margin-left: 10px;
+  margin-right:10px;
   border-radius: 50%;
   background-color: var(--text-grey);
   cursor: pointer;
@@ -683,6 +684,8 @@ footer .stat{
 .media{
   width: 20px;
   height: 20px;
+  margin-left: 10px;
+  margin-right:10px;
   align-items: center;
   fill: var(--white);
 }
