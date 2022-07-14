@@ -673,7 +673,6 @@ footer .stat{
   border-radius: 50%;
   background-color: var(--text-grey);
   cursor: pointer;
-  margin-right: 10px;
   fill: var(--white);
 }
 .join-li:hover{
@@ -706,8 +705,8 @@ footer .stat{
 .foot-link{
   width: 44px;
   height: 44px;
-  margin-left: 10px;
-  margin-right:10px;
+  padding-left: 10px;
+  padding-right:10px;
   border-radius: 50%;
   fill: var(--white);
 }
