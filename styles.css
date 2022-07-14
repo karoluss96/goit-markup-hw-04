@@ -34,6 +34,7 @@ body {
 .container{
   width: 1200px;
   margin: 0 auto;
+  padding: 0px;
 }
 .index{
   background-color: #fff;
@@ -44,7 +45,7 @@ body {
     border-bottom: 1px solid #ececec;
     min-height: 80px;
     align-items: center;
-    padding: 25px 0;
+    
 }
 .index .container{
   display: flex;
@@ -93,6 +94,8 @@ ol {
 }
 .list-nav{
   display: flex;
+  margin: 0px;
+  padding: 0px;
  }
 .list-nav a{
   text-decoration: none;
@@ -124,7 +127,7 @@ header .mail{
   margin-left: 50px;
   display: flex;
 }
-.list-nav1:hover{
+.list-nav1 svg:hover{
   color: var(--blue);
 }
 
@@ -270,7 +273,7 @@ nav .portfolio:focus {
   font-weight: 700;
     font-size: 36px;
     line-height: 42px;
-    color: var(--text-blacks);
+    color: var(--text-black);
     text-align: center;
     letter-spacing: 0.03em;
     margin: 0px;
@@ -574,15 +577,27 @@ img {
   border-radius: 0px;
 }  
 .imagine1:focus,
+.imagine1:hover,
 .imagine2:focus,
+.imagine2:hover,
 .imagine3:focus,
+.imagine3:hover,
 .imagine4:focus,
+.imagine4:hover,
 .imagine5:focus,
+.imagine5:hover,
 .imagine6:focus,
+.imagine6:hover,
 .imagine7:focus,
+.imagine7:hover,
 .imagine8:focus,
-.imagine9:focus {
-box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%);
+.imagine8:hover,
+.imagine9:focus,
+.imagine9:hover {
+  cursor: pointer;
+  border: 1px solid #EEEEEE;
+  --box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%), 1px 4px 6px rgba(0 0 0/ 16%);
 }
 .list-photos figcaption{
   padding-top: 10px;
@@ -642,6 +657,8 @@ footer .stat{
   align-items: center;
   margin-top: 16px;
   gap: 10px;
+  margin-left: 10px;
+  margin-right:10px;
   flex-wrap: wrap;
   display: flex;
   background-color: var(--black);
