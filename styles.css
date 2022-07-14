@@ -670,8 +670,6 @@ footer .stat{
   gap: 10px;
   flex-wrap: wrap;
   display: flex;
-  margin-left: 10px;
-  margin-right:10px;
   border-radius: 50%;
   background-color: var(--text-grey);
   cursor: pointer;
@@ -708,6 +706,8 @@ footer .stat{
 .foot-link{
   width: 44px;
   height: 44px;
+  margin-left: 10px;
+  margin-right:10px;
   border-radius: 50%;
   fill: var(--white);
 }
