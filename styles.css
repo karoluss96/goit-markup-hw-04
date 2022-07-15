@@ -61,10 +61,10 @@ body {
   letter-spacing: 0.03em;
 }
 .Web{
- color: #2196f3;
+ color: var(--blue);
 }
 .stat{
-  color: #212121;
+  color: var(--text-black);
 }
 .inner-link {
   text-decoration: none;
@@ -76,11 +76,11 @@ body {
   color: var(--text-black);
   line-height: 1.19;
   text-decoration-line: none;
-  padding: 24px 93px 24px 0px;
+  height: 80px;
 }
 
 .index nav a {
-  color: #212121;
+  color: var(--text-black);
   font-weight: 500;
   display: flex;
 }
@@ -657,7 +657,6 @@ footer .stat{
   align-items: center;
   margin-top: 16px;
   gap: 10px;
-  
   flex-wrap: wrap;
   display: flex;
   background-color: var(--black);
@@ -681,7 +680,6 @@ footer .stat{
 .media{
   width: 20px;
   height: 20px;
-  margin-right:10px;
   align-items: center;
   fill: var(--white);
 }
@@ -704,6 +702,8 @@ footer .stat{
 .foot-link{
   width: 44px;
   height: 44px;
+  display: flex;
+  align-items: center;
   padding-left: 10px;
   padding-right:10px;
   border-radius: 50%;
