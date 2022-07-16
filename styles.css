@@ -137,6 +137,7 @@ header .mail{
     font-size: 44px;
     text-transform: uppercase;
     line-height: 1.36;
+    max-width: 1600px;
     text-align: center;
     letter-spacing: 0.06em;
     justify-content: space-between;
@@ -213,6 +214,7 @@ nav .portfolio:focus {
 .sec1{
   background-color: rgba(47, 48, 58, 1);
   height: 600px;
+  max-width: 1600px;
   text-align: center;
   justify-content: center;
   display: flex;
